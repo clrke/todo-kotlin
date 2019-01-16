@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service
 
 @Service
 class GetTasksImpl @Autowired constructor(
-       val gateway: TaskGateway
+        val gateway: TaskGateway
 ) : GetTasks {
     override fun execute(): List<Task> = gateway.findAll()
 
