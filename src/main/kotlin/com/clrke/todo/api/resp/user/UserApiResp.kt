@@ -20,5 +20,5 @@ data class UserApiResp(
         val createDate: Date,
 
         @JsonProperty("deactivation_date")
-        val deactivationDate: Date
+        val deactivationDate: Date?
 )

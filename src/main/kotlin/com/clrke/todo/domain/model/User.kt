@@ -9,7 +9,7 @@ data class User(
         val lastName: String,
         val createDate: Date,
         val modifyDate: Date,
-        val deactivationDate: Date,
+        val deactivationDate: Date?,
         val active: Boolean
 )
 

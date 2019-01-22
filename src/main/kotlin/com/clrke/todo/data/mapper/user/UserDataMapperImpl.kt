@@ -9,7 +9,7 @@ class UserDataMapperImpl : UserDataMapper {
     override fun map(entities: List<UserEntity>): List<User> = entities.map { map(it) }
 
     override fun map(entity: UserEntity): User = User(
-            entity.id,
+            entity.id!!,
             entity.username,
             entity.firstName,
             entity.lastName,
